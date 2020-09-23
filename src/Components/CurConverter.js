@@ -13,7 +13,11 @@ class CurConverter extends React.Component{
           <span role="img" aria-label="money">
             &#x1f4b5;
           </span>
-                    </h2>
+                </h2>
+                <div className='From'>
+                    <input name="amount" type="text" value={this.state.amount} 
+                    onChange={event => this.setState({ amount: event.target.value })}
+          />
             </div>
         )
     }
