@@ -22,11 +22,18 @@ function App() {
     
     <Router>
     <div className="App">
-
     <div className="header">
- 
+     
+      <div className='nav-center'>
+<nav className="nav-container">
+  <ul>
+  <Link className='nav-Link-Home' to='/'>
+    <li> <h1>LOGO</h1></li>
+    </Link>
+  </ul>
+</nav>
 
-  <h1><Link className='nav-Link-Home' to='/'>LOGO</Link></h1>
+</div>
   </div>
     <nav className='nav-bar'>
     <ul className='nav-Links'>
@@ -42,7 +49,8 @@ function App() {
  <Link className='nav-Link'to='/Shoes'>
    <li>Shoes</li>
    </Link>
-</ul>    </nav>
+</ul>    
+</nav>
 
 
 
@@ -53,7 +61,9 @@ function App() {
     <Route path='/Shoes' component={Shoes} />
     </Switch>
  
-    
+    <div className='footer'>
+      <p>All Rights Reserved</p>
+    </div>
     </div>
     </Router>
   )

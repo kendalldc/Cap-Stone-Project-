@@ -137,7 +137,10 @@ body a{
 }
  */ 
 
- nav{
+/* Top Nav */
+
+/* Bottom Nav */
+ .nav-bar{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -174,6 +177,7 @@ color:red;
 }
 
 
+
 /* SLIDE SHOW CSS DESIGN */
 .slideShow {
   font-family: sans-serif;
@@ -183,4 +187,9 @@ color:red;
   height: 100vh;
 }
 
-
+ /* Footer */
+ .footer{
+	background:#000;
+  padding:5% 0;
+  color: white;
+}		
