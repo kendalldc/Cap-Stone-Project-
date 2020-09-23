@@ -9,7 +9,10 @@ class CurConverter extends React.Component{
         return(
             <div className="conveter">
                 <h2>
-                    <span></span>
+                    <span>Currency</span>Converter
+          <span role="img" aria-label="money">
+            &#x1f4b5;
+          </span>
                     </h2>
             </div>
         )
