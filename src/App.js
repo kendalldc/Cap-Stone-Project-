@@ -6,7 +6,7 @@ import Tops from './Components/Tops';
 import Bottoms from './Components/Bottoms';
 import Shoes from './Components/Shoes';
 // import SlideShow from './Components/SlideShow';
-
+import Cart from './Components/Cart';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +31,10 @@ function App() {
     <li> <h1>LOGO</h1></li>
     </Link>
   </ul>
+  <Cart
+          quantity={this.props.quantity}
+          amountToPay={this.props.amountToPay}
+        />
 </nav>
 
 </div>
