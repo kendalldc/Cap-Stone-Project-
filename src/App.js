@@ -1,12 +1,12 @@
 import React from 'react';
-// import Nav from './Components/Nav'
+import bag from './bag.png';
+
 import './App.css';
 import Home from './Components/Home';
 import Tops from './Components/Tops';
 import Bottoms from './Components/Bottoms';
 import Shoes from './Components/Shoes';
-// import SlideShow from './Components/SlideShow';
-import Cart from './Components/Cart';
+import Checkout from './Components/Checkout';
 import {
   BrowserRouter as Router,
   Switch,
@@ -30,13 +30,12 @@ function App() {
   <Link className='nav-Link-Home' to='/'>
     <li> <h1>LOGO</h1></li>
     </Link>
+    
+    <Link className='checkout-link' to='/Checkout'>
+<li><img className="bag" src='bag.png' alt='shopping bag'/></li>
+</Link>
   </ul>
-  <Cart
-          quantity={this.props.quantity}
-          amountToPay={this.props.amountToPay}
-        />
 </nav>
-
 </div>
   </div>
     <nav className='nav-bar'>
@@ -63,6 +62,7 @@ function App() {
     <Route path='/Tops' component={Tops} />
     <Route  path='/Bottoms' component={Bottoms} />
     <Route path='/Shoes' component={Shoes} />
+    <Route path='/Checkout' component={Checkout} />
     </Switch>
  
     <div className='footer'>
