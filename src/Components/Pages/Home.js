@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideShow from './SlideShow';
+import SlideShow from '../SlideShow';
 
 function Home(){
     return(

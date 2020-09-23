@@ -1,12 +1,12 @@
 import React from 'react';
 import bag from './bag.png';
-
 import './App.css';
-import Home from './Components/Home';
-import Tops from './Components/Tops';
-import Bottoms from './Components/Bottoms';
-import Shoes from './Components/Shoes';
-import Checkout from './Components/Checkout';
+import Home from './Components/Pages/Home';
+import Tops from './Components/Pages/Tops';
+import Bottoms from './Components/Pages/Bottoms';
+import Shoes from './Components/Pages/Shoes';
+import Cart from './Components/Pages/Cart';
+import Checkout from './Components/Pages/Checkout';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,8 +31,8 @@ function App() {
     <li> <h1>LOGO</h1></li>
     </Link>
     
-    <Link className='checkout-link' to='/Checkout'>
-<li><img className="bag" src='bag.png' alt='shopping bag'/></li>
+    <Link className='cart-link' to='/Cart'>
+<li><img className="bag" src='bag.png' alt='cart'/></li>
 </Link>
   </ul>
 </nav>
@@ -62,6 +62,7 @@ function App() {
     <Route path='/Tops' component={Tops} />
     <Route  path='/Bottoms' component={Bottoms} />
     <Route path='/Shoes' component={Shoes} />
+    <Route path='/Cart' component={Cart} />
     <Route path='/Checkout' component={Checkout} />
     </Switch>
  

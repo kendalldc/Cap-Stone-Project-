@@ -5,7 +5,7 @@ import React from 'react';
 function Tops(){
     return(
         <div className='tops'>
-            
+            <h1>Tops</h1>
         </div>
     )
 }
