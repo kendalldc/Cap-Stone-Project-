@@ -9,6 +9,7 @@ import Cart from './Components/Pages/Cart';
 import Checkout from './Components/Pages/Checkout';
 import LogIn from './Components/Pages/LogIn';
 import SignUp from './Components/SignUp';
+import CurConverter from '../src/Components/CurConverter';
 import {
   BrowserRouter as Router,
   Switch,
@@ -51,6 +52,8 @@ function App() {
  <Link className='nav-Link'to='/Shoes'>
    <li>Shoes</li>
    </Link>
+
+   {/* <Link></Link> */}
 </ul>    
 </nav>
 
@@ -69,6 +72,10 @@ function App() {
  
     <div className='footer'>
       <p>All Rights Reserved</p>
+
+      <div className='cur-box'>
+        <CurConverter/>
+      </div>
     </div>
     </div>
     </Router>
