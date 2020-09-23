@@ -7,6 +7,8 @@ import Bottoms from './Components/Pages/Bottoms';
 import Shoes from './Components/Pages/Shoes';
 import Cart from './Components/Pages/Cart';
 import Checkout from './Components/Pages/Checkout';
+import LogIn from './Components/Pages/LogIn';
+import SignUp from './Components/SignUp';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,13 +29,10 @@ function App() {
       <div className='nav-center'>
 <nav className="nav-container">
   <ul>
-  <Link className='nav-Link-Home' to='/'>
-    <li> <h1>LOGO</h1></li>
-    </Link>
-    
-    <Link className='cart-link' to='/Cart'>
-<li><img className="bag" src='bag.png' alt='cart'/></li>
-</Link>
+  <li> <Link className='nav-Link-Home' to='/'><h1>LOGO</h1></Link></li> 
+  <li><Link className='nav-Link-signup' to='/SignUp'> Sign Up</Link></li>
+  <li><Link className='nav-Link-signup' to='/LogIn'> Log In</Link></li>
+  <li> <Link className='cart-link' to='/Cart'><img className="bag" src='bag.png' alt='cart'/></Link></li>
   </ul>
 </nav>
 </div>
@@ -64,6 +63,8 @@ function App() {
     <Route path='/Shoes' component={Shoes} />
     <Route path='/Cart' component={Cart} />
     <Route path='/Checkout' component={Checkout} />
+    <Route path="/LogIn" component={LogIn} />
+    <Route path="/SignUp" component={SignUp} />
     </Switch>
  
     <div className='footer'>
