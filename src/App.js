@@ -25,40 +25,22 @@ function App() {
     
     <Router>
     <div className="App">
-    <div className="Top-header">
-     
-      <div className='nav-center'>
-<nav className="nav-One">
+  
+    
+       
+
+<nav className="">
   <ul>
- <Link className='nav-Home' to='/'><h1>LOGO</h1></Link>
+  <Link className='nav-Home' to='/'><h1>LOGO</h1></Link>
   <Link className='nav-Signup' to='/SignUp'> Sign Up</Link>
   <Link className='nav-Login' to='/LogIn'> Log In</Link>
   <Link className='nav-cart-link' to='/Cart'><img className="bag" src='https://i.pinimg.com/originals/31/d0/c3/31d0c3a3dd8e5d7112d51fca4b38656d.png' alt='yup'/></Link>
+  <Link className='nav-Link'to='/'><li>Home</li></Link>
+<Link className='nav-Link'to='/Tops'><li>Tops</li> </Link>
+ <Link  className='nav-Link' to='/Bottoms'><li>Bottoms</li></Link>
+ <Link className='nav-Link'to='/Shoes'><li>Shoes</li></Link>
+
   </ul>
-</nav>
-</div>
-  </div>
-    <nav className='nav-bar'>
-    <ul className='nav-Links'>
-
-
-    <Link className='nav-Link'to='/'>
-   <li>Home</li>
-   </Link>
-<Link className='nav-Link'to='/Tops'>
-   <li>Tops</li>
-   </Link>
-  
- <Link  className='nav-Link' to='/Bottoms'>
- <li>Bottoms</li>
- </Link>
- 
- <Link className='nav-Link'to='/Shoes'>
-   <li>Shoes</li>
-   </Link>
-
-   {/* <Link></Link> */}
-</ul>    
 </nav>
 
 
@@ -88,3 +70,31 @@ function App() {
 }
 
 export default App;
+
+
+//  <div class="header">
+// 		<div class="container">
+// 			<div class="row">
+// 			  <div class="col-md-12">
+//             <div className="header-left"> 
+//        <div className='nav-logo'> 
+//        <Link className='nav-Home' to='/'><h1>LOGO</h1></Link>  
+//        </div> 
+//          <div className='nav-menu'> 
+       
+//         <ul>
+//  <Link className='nav-Link'to='/'><li>Home</li></Link>
+//  <Link className='nav-Link'to='/Tops'><li>Tops</li></Link>
+// <Link  className='nav-Link' to='/Bottoms'><li>Bottoms</li></Link>
+//  <Link className='nav-Link'to='/Shoes'><li>Shoes</li></Link>
+//   <div className="clear"></div>      
+//   </ul>
+//        </div>
+//          <div className="clear"></div>  
+//                 </div>
+
+ 
+// </div>
+// </div>
+// </div>
+// </div>

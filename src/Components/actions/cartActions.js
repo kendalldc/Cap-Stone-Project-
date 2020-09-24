@@ -31,9 +31,10 @@ export const addQuantity=(id)=>{
 
 // update cart action
 
-export const updatCart=(id)=>{
-    return{
-        type: UPDATE_CART,
-        id
-    }
-}
+// export const updatCart=(id)=>{
+//     return{
+//         type: UPDATE_CART,
+//         id,
+//         count
+//     }
+// }

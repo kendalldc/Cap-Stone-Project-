@@ -3,17 +3,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { removeItem,addQuantity,subtractQuantity} from '../actions/cartActions'
+
 class Cart extends Component{
 
-    //to remove the item completely
     handleRemove = (id)=>{
         this.props.removeItem(id);
     }
-    //to add the quantity
     handleAddQuantity = (id)=>{
         this.props.addQuantity(id);
     }
-    //to substruct from the quantity
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
     }
@@ -52,12 +50,16 @@ class Cart extends Component{
        return(
             <div className="container">
                 <div className="cart">
-                    <h5>You have ordered:</h5>
+                    <h5 className='your-bag'>Your Bag</h5>
                     <ul className="collection">
                         {addedItems}
                     </ul>
-                </div>      
+                </div> 
+                <div className="checkout">
+              <Link to='/checkout'>  <h5>Check Out</h5></Link>
+                </div>     
             </div>
+           
        )
     }
 }
@@ -73,4 +75,6 @@ const mapDispatchToProps = (dispatch)=>{
         subtractQuantity: (id)=>{dispatch(subtractQuantity(id))}
     }
 }
+
+
 export default connect(mapStateToProps,mapDispatchToProps)(Cart)
