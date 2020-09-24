@@ -1,21 +1,21 @@
 
-import Item1 from '../../../src/mini-skirt.jpg'
-import Item2 from '../../../src/mini-skirt.jpg'
-import Item3 from '../../../src/mini-skirt.jpg'
-import Item4 from '../../../src/mini-skirt.jpg'
-import Item5 from '../../../src/mini-skirt.jpg'
-import Item6 from '../../../src/mini-skirt.jpg'
+import Item1 from '../../../src/swell1.jpg'
+import Item2 from '../../../src/swell2.jpg'
+import Item3 from '../../../src/swell3.jpg'
+import Item4 from '../../../src/swell4.jpg'
+import Item5 from '../../../src/swell5.jpg'
+import Item6 from '../../../src/swell1.jpg'
 import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY } from '../actions/cart-actions'
 
 
 const initState = {
     items: [
-        {id:1,title:'Mini-Skirt', desc: "Lavendar mini skirt", price:110,img:Item1},
-        {id:2,title:'Adidas', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80,img: Item2},
-        {id:3,title:'Vans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:120,img: Item3},
-        {id:4,title:'White', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:260,img:Item4},
-        {id:5,title:'Cropped-sho', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:160,img: Item5},
-        {id:6,title:'Blues', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img: Item6}
+        {id:1,title:'Suede', desc: "20ML Stainless Steel Cantene", price:54,img:Item1},
+        {id:2,title:'Lavendar', desc: "20ML Stainless Steel Cantene", price:23,img: Item2},
+        {id:3,title:'Vans', desc: "20ML Stainless Steel Cantene",price:49,img: Item3},
+        {id:4,title:'White', desc: "20ML Stainless Steel Cantene", price:36,img:Item4},
+        {id:5,title:'Cropped-sho', desc: "20ML Stainless Steel Cantene", price:160,img: Item5},
+        {id:6,title:'Blues', desc: "20ML Stainless Steel Cantene",price:90,img: Item6}
     ],
     addedItems:[],
     total: 0

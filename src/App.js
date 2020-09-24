@@ -11,6 +11,7 @@ import LogIn from './Components/Pages/LogIn';
 import SignUp from './Components/SignUp';
 import CurConverter from '../src/Components/CurConverter';
 import Contact from '../src/Components/Pages/Contact';
+import About from '../src/Components/Pages/About';
 import {
   BrowserRouter as Router,
   Switch,
@@ -49,9 +50,9 @@ function App() {
     <nav className='nav-bar'>
     <ul className='nav-Links'>
     <Link className='nav-Link'to='/'><li>Home</li></Link>
-<Link className='nav-Link'to='/Tops'><li>About</li> </Link> 
- <Link  className='nav-Link' to='/Bottoms'><li>BLOG</li></Link>
- <Link className='nav-Link'to='/Shoes'><li>SHOP</li></Link>
+    <Link className='nav-Link'to='/Shoes'><li>Shop</li></Link>
+<Link className='nav-Link'to='/About'><li>About</li> </Link> 
+ {/* <Link  className='nav-Link' to='/Bottoms'><li>BLOG</li></Link> */}
  <Link className='nav-Link'to='/Contact'><li>Contact Us</li></Link>
 </ul>    
 </nav>
@@ -60,7 +61,7 @@ function App() {
 
     <Switch>
     <Route  path='/' exact component={Home} />
-    <Route path='/Tops' component={Tops} />
+    <Route path='/About' component={About} />
     <Route  path='/Bottoms' component={Bottoms} />
     <Route path='/Shoes' component={Shoes} />
     <Route path='/Cart' component={Cart} />
@@ -71,11 +72,14 @@ function App() {
     </Switch>
  
     <div className='footer'>
-      <p>All Rights Reserved</p>
 
       <div className='cur-box'>
         <CurConverter/>
       </div>
+      <br/>
+      <p>All Rights Reserved</p>
+      <h6>This model is solely for website demo purpose.</h6>
+
     </div>
     </div>
     </Router>

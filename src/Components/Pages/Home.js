@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SlideShow from '../SlideShow';
+import { Slide } from 'react-slideshow-image';
 
 class Home extends Component{
     
@@ -7,9 +8,9 @@ class Home extends Component{
     
     return(
         <div className="Home">
-         <h3></h3>
-
-            <SlideShow />
+         <h3>Welcome</h3>
+<img src="src/Components/images/slide_2.jpg"/>
+            {/* <SlideShow /> */}
 
         </div>
     )

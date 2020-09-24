@@ -277,6 +277,8 @@ color:rgb(68, 162, 190);
   top: 10px;
   left: 900px;
   text-decoration: none;
+  color: black;
+
 }
 
 /* Sign UP Link */
@@ -285,6 +287,7 @@ color:rgb(68, 162, 190);
   top: 10px;
   left: 960px;
   text-decoration: none;
+  color: black;
 }
 
 /* Bag Link */
@@ -319,7 +322,7 @@ color:rgb(68, 162, 190);
   width: 25px;
 }
 /* SLIDE SHOW CSS DESIGN */
-.slideShow {
+/* .slideShow {
   font-family: sans-serif;
   display: flex;
   align-items: center;
@@ -327,9 +330,31 @@ color:rgb(68, 162, 190);
   height: 100vh;
 }
 
+.caro{
+  background-color: aqua;
+} */
+
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background-image: url(src/Components/images/slide_2.jpg);
+  text-align: center;
+}
+
+
+
  /* Footer */
  .footer{
-	background:purple;
+	background:rgb(101, 142, 189);
   padding:5% 0;
   color: white;
 }	
@@ -337,5 +362,150 @@ color:rgb(68, 162, 190);
 /* Contact Page */
 
 .contactPage{
-  height: 100vh;
+  /* height: 100vh; */
 }
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-content{
+  align-items: center;
+  color: blue;
+}
+
+
+/* Sign Up */
+
+.signUpForm{
+  border:solid #4CAF50;
+  width:20%;
+  display: flex;
+flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.alreadySign :visited{
+color: blue;
+}
+
+
+/* Login Form */
+.logInForm{
+  border:solid #4CAF50;
+  width:20%;
+  display: flex;
+flex-direction: column;
+  align-items: center;
+}
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+  background-color: black;
+color:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* shop */
+.center{
+  text-align: center;
+  color: #f44336;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 6%;
+}
+
+
+.Converter{
+  /* border: solid orange; */
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.converterTitle{
+text-align: center;
+}
+
+
+/* About Page */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "Img-container Img-container Img-container"
+    "waste waste waste"
+    "forest forest forest"
+    "support support support";
+}
+.Img-container { grid-area: Img-container; }
+.waste { grid-area: waste; }
+.forest { grid-area: forest; }
+.support { grid-area: support; }

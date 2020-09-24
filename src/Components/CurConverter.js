@@ -62,7 +62,7 @@ class CurConverter extends Component {
     render() {
         return (
             <div className="Converter">
-                <h2><span>Currency </span> Converter  </h2>
+                <h2 className="converterTitle">Currency Converter  </h2>
                 <div className="Form">
                     <input
                         name="amount"
