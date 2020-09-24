@@ -24,7 +24,6 @@ export default class Message extends Component{
         });
     }
     handleSubmit = (event)=>{
-        // alert("Feedback sent to us... Thank you!");
         event.preventDefault();
         console.log(event)
     

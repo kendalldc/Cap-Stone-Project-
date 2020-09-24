@@ -10,7 +10,7 @@ import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY } from '../actions/ca
 
 const initState = {
     items: [
-        {id:1,title:'Winter body', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:110,img:Item1},
+        {id:1,title:'Mini-Skirt', desc: "Lavendar mini skirt", price:110,img:Item1},
         {id:2,title:'Adidas', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80,img: Item2},
         {id:3,title:'Vans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:120,img: Item3},
         {id:4,title:'White', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:260,img:Item4},
@@ -23,7 +23,6 @@ const initState = {
 }
 const cartReducer= (state = initState,action)=>{
    
-    //INSIDE HOME COMPONENT
     if(action.type === ADD_TO_CART){
           let addedItem = state.items.find(item=> item.id === action.id)
           //check if the action id exists in the addedItems

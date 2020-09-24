@@ -1,5 +1,5 @@
 import React from 'react';
-import bag from './bag.png';
+import bag from './Components/bag.png';
 import './App.css';
 import Home from './Components/Pages/Home';
 import Tops from './Components/Pages/Tops';
@@ -25,15 +25,15 @@ function App() {
     
     <Router>
     <div className="App">
-    <div className="header">
+    <div className="Top-header">
      
       <div className='nav-center'>
-<nav className="nav-container">
+<nav className="nav-One">
   <ul>
-  <li> <Link className='nav-Link-Home' to='/'><h1>LOGO</h1></Link></li> 
-  <li><Link className='nav-Link-signup' to='/SignUp'> Sign Up</Link></li>
-  <li><Link className='nav-Link-signup' to='/LogIn'> Log In</Link></li>
-  <li> <Link className='cart-link' to='/Cart'><img className="bag" src='bag.png' alt='cart'/></Link></li>
+ <Link className='nav-Home' to='/'><h1>LOGO</h1></Link>
+  <Link className='nav-Signup' to='/SignUp'> Sign Up</Link>
+  <Link className='nav-Login' to='/LogIn'> Log In</Link>
+  <Link className='nav-cart-link' to='/Cart'><img className="bag" src='https://i.pinimg.com/originals/31/d0/c3/31d0c3a3dd8e5d7112d51fca4b38656d.png' alt='yup'/></Link>
   </ul>
 </nav>
 </div>
@@ -41,6 +41,10 @@ function App() {
     <nav className='nav-bar'>
     <ul className='nav-Links'>
 
+
+    <Link className='nav-Link'to='/'>
+   <li>Home</li>
+   </Link>
 <Link className='nav-Link'to='/Tops'>
    <li>Tops</li>
    </Link>

@@ -1,64 +1,55 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import { addToCart } from '../actions/cartActions'
 
+ class Tops extends Component{
+    
+    handleClick = (id)=>{
+        this.props.addToCart(id); 
+    }
 
+    render(){
+        let itemList = this.props.items.map(item=>{
+            return(
+                <div className="card" key={item.id}>
+                        <div className="card-image">
+                            <img src={item.img} alt={item.title}/>
+                            <span className="card-title">{item.title}</span>
+                            <span to="/" className="btn-floating halfway-fab waves-effect waves-light red" onClick={()=>{this.handleClick(item.id)}}><i className="material-icons">add</i></span>
+                        </div>
 
-function Tops(){
-    return(
-        <div className='tops'>
-            <h1>Tops</h1>
-        </div>
-    )
+                        <div className="card-content">
+                            <p>{item.desc}</p>
+                            <p><b>Price: {item.price}$</b></p>
+                        </div>
+                 </div>
+            )
+        })
+
+        return(
+            <div className="container">
+                <h3 className="center">Our items</h3>
+                <div className="box">
+                    {itemList}
+                </div>
+            </div>
+        )
+    }
 }
-
-
-// class Tops extends React.Component{
-//     constructor() {
-//         super()
-//         this.state = {advice:""};
-//       }
+const mapStateToProps = (state)=>{
+    return {
+      items: state.items
+    }
+  }
+const mapDispatchToProps= (dispatch)=>{
     
-  
+    return{
+        addToCart: (id)=>{dispatch(addToCart(id))}
+    }
 
-//   componentDidMount(){
-//     this.fetchTops();
-//   }
-  
-//   fetch =()=>{
-//     axios.get('https://api.adviceslip.com/advice')
-//     .then((response) =>{
-//       const {advice} = response.data.slip;
-// this.setState({advice})
-//     })
-    
-    
-//      .catch((error) =>{
-//       console.log(error);
-
-//     });    
-
-//   }
-  
-//   render(){
-//     const{advice} = this.state
-//     return(
-
-//     <div className="Life">
-//          <h1 className="life-heading">Life.</h1>
-//       <div className="card">
-//        <h1 className="heading">{this.state.advice}</h1>
-//        <button className="button" onClick={this.fetchAdvice}>
-//          <span> GIVE  ME ADVICE</span>
-//        </button>
-// </div>
-//  </div>
-
-//     );
-//   }
-// }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Tops)
 
 
 
-
-
-
-export default Tops;
+// export default Tops;
