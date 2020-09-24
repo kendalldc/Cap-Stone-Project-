@@ -20,16 +20,4 @@ export default Nav;
 
 
 
-{/* <div className='nav-center'>
-<nav className="nav-container">
-  <ul>
-  <Link className='nav-Link-Home' to='/'>
-    <li> <h1>Logo</h1></li>
-    </Link>
-    
-    <Link className='cart-link' to='/Cart'>
-<li><img className="bag" src='bag.png' alt='cart'/></li>
-</Link>
-  </ul>
-</nav>
-</div> */}
+{
