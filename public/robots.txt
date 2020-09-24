@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+https://protected-wildwood-68512.herokuapp.com/ | https://git.heroku.com/protected-wildwood-68512.git
+
+
+USE THIS IN FETCH CALLS 
+  https://protected-wildwood-68512.herokuapp.com/
