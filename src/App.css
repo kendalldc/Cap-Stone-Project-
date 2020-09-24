@@ -228,6 +228,10 @@ body a{
 html
 
 
+.topHeader{
+  font-family: 'Playfair Display', serif;
+}
+
  nav{
   display: flex;
   justify-content: space-around;
@@ -242,6 +246,9 @@ html
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+
 }
 
 .nav-Link{
@@ -251,7 +258,7 @@ html
 }
 
 .nav-Link:hover{
-color:rgb(31, 118, 145);
+color:rgb(68, 162, 190);
 }
 
 /* .nav-Link-Home{
@@ -283,19 +290,28 @@ color:rgb(31, 118, 145);
 /* Bag Link */
 .navLeftBag{
   position: absolute;
-  top: 40px;
-  left: 1000px;
+  top: 10px;
+  left: 1035px;
 }
 /* SIP Logo */
 .navLogo{
   text-decoration: none;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 55px;
+  left: 100px;
 }
+
 .nav-center{
   display: inline;
 }
 .sip{
-  color: whitesmoke;
+  color: black;
 }
 
 .bag{
@@ -318,3 +334,8 @@ color:rgb(31, 118, 145);
   color: white;
 }	
 
+/* Contact Page */
+
+.contactPage{
+  height: 100vh;
+}

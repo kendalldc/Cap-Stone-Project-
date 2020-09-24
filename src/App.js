@@ -10,6 +10,7 @@ import Checkout from './Components/Pages/Checkout';
 import LogIn from './Components/Pages/LogIn';
 import SignUp from './Components/SignUp';
 import CurConverter from '../src/Components/CurConverter';
+import Contact from '../src/Components/Pages/Contact';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,7 +27,7 @@ function App() {
     <Router>
     <div className="App">
   
-    <div className="Top-header">
+    <div className="topHeader">
         
       <div className='nav-center'>
 
@@ -34,10 +35,8 @@ function App() {
   <ul >
  
 
-  <li><Link className='navLeft' to='/LogIn'> Log In</Link></li>
-
+  <Link className='navLeft' to='/LogIn'> Log In</Link>
   <Link className='navLeftSign' to='/SignUp'> Sign Up </Link>
-
   <Link className='navLeftBag' to='/Cart'><img className="bag" src='https://i.pinimg.com/originals/31/d0/c3/31d0c3a3dd8e5d7112d51fca4b38656d.png' alt='cart'/></Link>
 
   </ul>
@@ -45,17 +44,15 @@ function App() {
 </div>
   </div>
 
+  <Link className='navLogo' to='/'><h1 className="sip">Sip</h1></Link>
 
     <nav className='nav-bar'>
     <ul className='nav-Links'>
-    <Link className='navLogo' to='/'><h1 className="sip">Sip</h1></Link>
     <Link className='nav-Link'to='/'><li>Home</li></Link>
-<Link className='nav-Link'to='/Tops'><li>Tops</li> </Link>
-  
- <Link  className='nav-Link' to='/Bottoms'><li>Bottoms</li></Link>
- 
- <Link className='nav-Link'to='/Shoes'><li>Shoes</li></Link>
-
+<Link className='nav-Link'to='/Tops'><li>About</li> </Link> 
+ <Link  className='nav-Link' to='/Bottoms'><li>BLOG</li></Link>
+ <Link className='nav-Link'to='/Shoes'><li>SHOP</li></Link>
+ <Link className='nav-Link'to='/Contact'><li>Contact Us</li></Link>
 </ul>    
 </nav>
 
@@ -70,6 +67,7 @@ function App() {
     <Route path='/Checkout' component={Checkout} />
     <Route path="/LogIn" component={LogIn} />
     <Route path="/SignUp" component={SignUp} />
+    <Route path="/Contact" component={Contact} />
     </Switch>
  
     <div className='footer'>
