@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My Cap Stone Project is fresh fun and enviormentally safe!
+My eccommerce store sell stainless steel tumblrs/ water bottles.They are so many benefits. 
+
 
 ## Available Scripts
 
